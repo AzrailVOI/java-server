@@ -1,3 +1,5 @@
+package com.javaserver;
+
 public enum HttpMethod {
     GET,
     POST,

@@ -1,3 +1,5 @@
+package com.javaserver;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,7 @@ public class HttpResponse {
     private String statusMessage = "OK";
 
     public HttpResponse() {
-        this.headers.put("Server", "Java HTTP Server");
+        this.headers.put("com.javaserver.Server", "Java HTTP com.javaserver.Server");
         this.headers.put("Connection", "close");
     }
 
