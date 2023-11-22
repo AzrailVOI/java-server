@@ -40,7 +40,7 @@ public class Server {
 
         AsynchronousSocketChannel clientChannel = future.get();
 
-        HttpHandler fileHandler = new FolderHttpHandler("files", "index.html");
+        HttpHandler fileHandler = new FolderHttpHandler("com/javaserver/files", "index.html");
 
         while (clientChannel != null && clientChannel.isOpen()){
             ByteBuffer buffer = ByteBuffer.allocate(BUFFER_SIZE);
